@@ -1,0 +1,245 @@
+.flex-column {
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+a,
+input:focus {
+  outline: none;
+}
+input {
+  border: 1px solid #c1c1c1;
+  padding: 0;
+  -webkit-appearance: none;
+}
+s {
+  text-decoration: none;
+}
+/* .team-list{
+    width: 1125rem/@ratio;
+} */
+body {
+  background: #fff;
+  font-size: 12px;
+}
+.team_app {
+  display: none;
+}
+.header {
+  box-shadow: 0px 1px 0px 0px #f1f1f1;
+  background: #fff;
+}
+.header .navbar-nav > li > a {
+  color: #343434;
+}
+.header .navbar-nav > li > a:hover {
+  color: #343434 !important;
+}
+.header .navbar-nav > li > a:focus {
+  color: #343434 !important;
+}
+/*媒体查询*/
+@media (max-width: 768px) {
+  .header .navbar-nav > li > a:hover {
+    color: #fff !important;
+  }
+  .header .navbar-nav > li > a:focus {
+    color: #fff !important;
+  }
+  .header .navbar-nav > li > a {
+    color: #fff;
+  }
+  .team_pc {
+    display: none;
+  }
+  .team_app {
+    display: block;
+  }
+  .section-gallery-A {
+    background: #fff;
+    padding-top: 3.57142857rem;
+  }
+  .section-gallery-A .section-title {
+    width: 20rem;
+    font-size: 1.42857143rem;
+    color: #2D2F37;
+    display: block;
+    margin: 0 auto 2.14285714rem;
+  }
+  .photo-wrapper {
+    width: 20rem;
+    height: 20.71428571rem;
+    position: relative;
+  }
+  .photo-wrapper img {
+    width: 18.57142857rem;
+    height: 19.71428571rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  .info-list-A {
+    padding: 0 3.42857143rem;
+  }
+  .info-list-A .info-card-A {
+    display: none;
+  }
+  .info-list-A .info-card-A:first-child {
+    display: block;
+  }
+  .info-card-A {
+    padding: 2.14285714rem 0;
+  }
+  .info-card-A .name {
+    font-size: 1.21428571rem;
+    line-height: 1;
+  }
+  .info-card-A .name-L2 {
+    font-size: 1rem;
+    color: #A5A7AE;
+    line-height: 1.5;
+    margin-top: 0.57142857rem;
+  }
+  .info-card-A .desc {
+    font-size: 1rem;
+    margin-top: 0.71428571rem;
+    line-height: 1.5;
+  }
+  .info-card-A .linkedin {
+    display: block;
+    width: 1.42857143rem;
+    height: 1.42857143rem;
+    background: url(../img/svg/icon_linkedin.svg) no-repeat;
+    background-size: cover;
+    margin-top: 1.14285714rem;
+  }
+  .gallery-wrapper .swiper-slide {
+    margin: 0 0.92857143rem;
+  }
+  .gallery-wrapper .photo-wrapper {
+    position: relative;
+    background: #fff;
+  }
+  .gallery-wrapper .photo-wrapper:before {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.08;
+    transition: all 0.3s;
+    content: "";
+    z-index: 2;
+  }
+  .gallery-wrapper .swiper-slide-active {
+    box-shadow: 0 1px 13px 3px rgba(209, 209, 209, 0.8);
+  }
+  .gallery-wrapper .swiper-slide-active:before {
+    opacity: 0;
+  }
+  .section-team {
+    margin-top: 7.35714286rem;
+    padding-top: 0;
+  }
+  .section-consultant {
+    background: #f9fbfd;
+  }
+  .team_footer .team_wel > div:first-child {
+    color: #2D2F37;
+  }
+}
