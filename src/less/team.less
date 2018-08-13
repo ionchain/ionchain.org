@@ -1,0 +1,146 @@
+@import 'imports/variable.less';
+@import 'imports/mixins.less';
+@import 'imports/reset.less';
+/* .team-list{
+    width: 1125rem/@ratio;
+} */
+body{
+    background: #fff;
+    font-size: 12px;
+}
+.team_app{
+    display: none;
+}
+// 导航start
+.header{
+    box-shadow:0px 1px 0px 0px rgba(241,241,241,1);
+    background: #fff;
+}
+.header .navbar-nav>li>a{
+    color: #343434;
+}
+.header .navbar-nav>li>a:hover{
+    color: #343434 !important;
+}
+.header .navbar-nav>li>a:focus{
+    color:#343434 !important;
+}
+// 导航end
+
+/*媒体查询*/
+@media (max-width: 768px) { 
+    .header .navbar-nav>li>a:hover{
+        color: #fff !important;
+    }
+    .header .navbar-nav>li>a:focus{
+        color:#fff !important;
+    }
+    .header .navbar-nav>li>a{  //导航字体颜色
+        color: #fff;
+    }
+
+    .team_pc{
+        display: none;
+    }
+    .team_app{
+        display:block;
+    }
+    .section-gallery-A{
+        background: #fff;
+        padding-top: 50rem/@ratio;
+        .section-title{
+            width: 280rem/@ratio;
+            font-size: 20rem/@ratio;
+            color:#2D2F37;
+            display: block;
+            margin:0 auto 30rem/@ratio;
+        }
+    }
+    .photo-wrapper{
+        width: 280rem/@ratio;
+        height: 290rem/@ratio;
+        position: relative;
+        img{
+            width: 260rem/@ratio;
+            height: 276rem/@ratio;
+            position: absolute;
+            left:50%;
+            bottom:0;
+            transform: translateX(-50%);
+        }
+    }
+    .info-list-A{
+        padding:0 48rem/@ratio;
+        .info-card-A{
+            display: none;
+            &:first-child{
+                display: block;
+            }
+        }
+    }
+    .info-card-A{
+        padding: 30rem/@ratio 0;
+        .name{
+            font-size: 17rem/@ratio;
+            line-height: 1;
+        }
+        .name-L2{
+            font-size: 14rem/@ratio;
+            color: #A5A7AE;
+            line-height: 1.5;
+            margin-top: 8rem/@ratio;
+        }
+        .desc{
+            font-size: 14rem/@ratio;
+            margin-top: 10rem/@ratio;
+            line-height: 1.5;
+        }
+        .linkedin{
+            display:block;
+            width: 20rem/@ratio;
+            height: 20rem/@ratio;
+            background: url(../img/svg/icon_linkedin.svg) no-repeat;
+            background-size: cover;
+            margin-top: 16rem/@ratio;
+        }
+    }
+    .gallery-wrapper{
+        .swiper-slide{
+            margin:0 13rem/@ratio;
+        }
+        .photo-wrapper{
+            position: relative;
+            background: #fff;
+            &:before{
+                width:100%;
+                height: 100%;
+                background:#000;
+                position: absolute;
+                top:0;
+                left:0;
+                opacity: 0.08;
+                transition: all 0.3s;
+                content: "";
+                z-index: 2;
+            }
+        }
+        .swiper-slide-active{
+            box-shadow: 0 1px 13px 3px rgba(209, 209, 209, 0.8);
+            &:before{
+                opacity: 0;
+            }
+        }
+    }
+    .section-team{
+        margin-top: 103rem/@ratio;
+        padding-top: 0;
+    }
+    .section-consultant{
+        background:rgba(249,251,253,1);
+    }
+    .team_footer{
+        .team_wel > div:first-child{
+            color: #2D2F37;
+        }
+    }
+}

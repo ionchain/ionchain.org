@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/bitbug_favicon.ico">
+        <title>离子链_敬请期待</title>
+    <meta content="" name="author">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="static/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="app/css/dest/styles.css?=2016121272249">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="app/dest/base/chin.js"></script>
+	<style>
+		@font-face {
+			font-family: "lantingxihei";
+			src: url("fonts/FZLTCXHJW.TTF");
+        }
+        .ioc_white{
+            display: none !important;
+        }
+        .header{
+            box-shadow:0px 1px 0px 0px rgba(241,241,241,1);
+            background: #fff;
+        }
+        .header .navbar-nav>li>a{
+            color: #343434;
+        }
+        .header .navbar-nav>li>a:hover{
+            color: #343434 !important;
+        } 
+         .header .navbar-nav>li>a:focus{
+            color:#343434 !important;
+        }
+        /*-本页私有-*/
+        @media (max-width: 768px){
+            .header .navbar-nav>li>a{
+                color: #fff;
+            }
+        }
+    </style>
+	<script src="static/jquery/2.2.4/jquery.min.js"></script>
+
+</head>
+
+<body class="page-coming_soon">
+    <!--导航-->
+    @@include('html-includes/header_CN.html')
+    <!--敬请期待-->
+    <div class="coming_soon">
+        <div>
+            <img src="img/coming_soon.png" alt="">
+        </div>
+        <div>更多功能正在开发中，敬请期待......</div>
+        <div><a href="javascript:history.back(-1)">返回上一页</a></div>
+
+    </div>
+
+
+
+
+    <script src="app/dest/lib/lib.js?=2016121272249"></script>
+    
+    <script src="static/bootstrap-tour/0.11.0/js/bootstrap-tour.min.js"></script>
+    <script src="static/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+    <script src="static/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="static/bootstrap-table/1.11.0/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+    <script src="static/ravenjs/3.7.0/raven.min.js"></script>
+    <script src="app/dest/base/currency.js"></script>
+    <script src="app/dest/frontend/index.js?=2016121272249"></script>
+
+    <!-- vw ,vh 兼容 -->
+    <script src="plugins/viewport-units-buggyfill.hacks.js"></script>
+    <script src="plugins/viewport-units-buggyfill.js"></script>
+    <script>
+        window.viewportUnitsBuggyfill.init({
+            refreshDebounceWait: 50,
+            hacks: window.viewportUnitsBuggyfillHacks
+        });
+    </script>
+
+	
+</body>
+</html>
