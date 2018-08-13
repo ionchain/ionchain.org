@@ -62,11 +62,11 @@ ul {
   display: none;
 }
 .bg_img {
-  background: #fff url("../wallet/images/header_bg.png") no-repeat !important;
+  background: #fff url("http://img3.1nongfu.com/wallet/images/header_bg.png") no-repeat !important;
   background-size: 100% !important;
 }
 .bg_img_en {
-  background: #fff url("../wallet/images/header_bg_en.png") no-repeat !important;
+  background: #fff url("http://img3.1nongfu.com/wallet/images/header_bg_en.png") no-repeat !important;
   background-size: 100% !important;
 }
 header.page-header {

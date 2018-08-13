@@ -2,6 +2,7 @@
 	less = require('gulp-less'),
 	fileinclude = require('gulp-file-include'),
 	browserSync = require('browser-sync');
+	replace = require('gulp-replace');
 
 var DIST = '../dist'
 var SRC = '../src'
@@ -13,19 +14,24 @@ gulp.task('fileinclude', function() {
 		// 	markdown: markdown.parse
 		// }
 		}))
+		.pipe(replace(/__baseURL#/g, 'http://img3.1nongfu.com/'))//relative '../'
 		.pipe(gulp.dest(DIST));
 });
 
 gulp.task('less', function() {
 	gulp.src(`${SRC}/less/*.less`)
 	.pipe(less())
+	.pipe(replace(/__baseIMG#/g, 'http://img3.1nongfu.com/'))
+	.pipe(replace(/__UPPER_ONE#/g, 'http://img3.1nongfu.com/'))
 	.pipe(gulp.dest(`${DIST}/css`));
 });
 
 gulp.task('watch', function() {
 	gulp.watch(`${SRC}/less/**/*.less`, ['less']);
 	gulp.watch([`${SRC}/*.html`,`${SRC}/html-includes/**/*.html`], ['fileinclude']);
+	gulp.watch([`${SRC}/*.html`,`${SRC}/html-includes/**/*.html`], ['fileinclude']);
 });
+
 
 gulp.task('browser-sync', function() {
 	browserSync.init({

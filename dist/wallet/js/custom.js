@@ -26,13 +26,16 @@ jQuery(document).ready(function() {
         }
 
         new_scroll_position = last_scroll_position;
-
+        //底部滚动
+        if(scrollTop > 200){
+            $("#footer_app").css({'overflow-y':"auto"})
+        }
     }
     $('window,document,body').on('ready scroll',function(){
         handleScroll(e.target.scrollTop);
     })
 	$(window).scroll(function(e){
-        // console.log(arguments,'ddddd');
+        
         handleScroll($(window).scrollTop());
 	});
 
@@ -51,6 +54,5 @@ jQuery(document).ready(function() {
         }
     
         })
-
 });
 

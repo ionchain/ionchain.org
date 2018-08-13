@@ -11,8 +11,8 @@
     <meta content="" name="author">
 
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="static/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="app/css/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__baseURL#static/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__baseURL#app/css/libs/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="app/css/dest/styles.css?=2016121272249">
     <link rel="stylesheet" href="css/style.css">
     <script src="app/dest/base/chin.js"></script>
@@ -43,14 +43,14 @@
                 <div class="container">
                     <div class="col-md-6 col-sm-6 col-xs-12 ">
                         <div class="community-banner_text">
-                            <div><span><img src="img/community/logo.png" alt=""></span><span>离子激励计划</span></div>
+                            <div><span><img src="__baseURL#img/community/logo.png" alt=""></span><span>离子激励计划</span></div>
                             <div><b>5,000,000</b><span>IONC</span></div>
                             <div>等你来领取</div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 ">
                         <div class="vision_ban">
-                            <img src="img/community/community_banner.png" alt="">
+                            <img src="__baseURL#img/community/community_banner.png" alt="">
                         </div>
                     </div>
 
@@ -106,14 +106,6 @@
         <!--底部-->
         @@include('html-includes/footer_CN.html')
     </div>
-    <script src="app/dest/lib/lib.js?=2016121272249"></script>
-    <script src="static/jquery/2.2.4/jquery.min.js"></script>
-    <script src="static/bootstrap-tour/0.11.0/js/bootstrap-tour.min.js"></script>
-    <script src="static/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
-    <script src="static/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
-    <script src="static/bootstrap-table/1.11.0/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
-    <script src="static/ravenjs/3.7.0/raven.min.js"></script>
-    <script src="app/dest/base/currency.js"></script>
-    <script src="app/dest/frontend/index.js?=2016121272249"></script>
+    @@include('html-includes/footer-common-script.html')
 </body>
 </html>
