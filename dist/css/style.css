@@ -588,6 +588,9 @@ a:hover {
 .community_cont {
   display: flex;
 }
+.community_cont > * {
+  flex: 1;
+}
 .courses .community_courses_img {
   margin-right: 20px;
 }
