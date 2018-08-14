@@ -243,8 +243,3 @@ body {
     color: #2D2F37;
   }
 }
-@media (max-width: 768px) {
-  .page-team .navbar-nav .caret_copy2 {
-    display: none !important;
-  }
-}

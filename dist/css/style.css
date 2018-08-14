@@ -642,9 +642,6 @@ a:hover {
 .community_cont {
   display: flex;
 }
-.community_cont > * {
-  flex: 1;
-}
 .courses .community_courses_img {
   margin-right: 20px;
 }
@@ -1926,7 +1923,7 @@ a:hover {
     background: #282A36;
     color: #A5A7AE;
     height: 70vh;
-    overflow: hidden;
+    overflow: auto;
     position: fixed;
     bottom: 0;
   }
