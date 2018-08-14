@@ -1,6 +1,9 @@
 #footer_app {
   display: none;
 }
+.main_footer {
+  z-index: auto;
+}
 @media (max-width: 768px) {
   .icon_app {
     width: 100%;
@@ -55,7 +58,7 @@
     background: #282A36;
     color: #A5A7AE;
     height: 70vh;
-    overflow: auto;
+    overflow: hidden;
     position: fixed;
     bottom: 0;
   }
