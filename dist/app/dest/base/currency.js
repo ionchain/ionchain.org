@@ -322,11 +322,10 @@
 
     })
     //-------safari 滚动问题------
-    $('window,html,body').scroll(function(){
+    /* $('window,html,body').scroll(function(){
         if($("nav").next().offset().top < -200){
             $("#footer_app").css({'overflow-y':"auto"})
-            // $("#footer_app").scrollTop(-100)
         }
-    })
+    }) */
 
 })();

@@ -55,7 +55,7 @@
     background: #282A36;
     color: #A5A7AE;
     height: 70vh;
-    overflow: hidden;
+    overflow: auto;
     position: fixed;
     bottom: 0;
   }
