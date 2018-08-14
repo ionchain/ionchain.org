@@ -1,4 +1,17 @@
 (function(){
+    var winH = $(window).outerHeight();
+    var mainH = $('.main_cont').outerHeight()-46;
+    var footerH = $('.main_footer').outerHeight();
+    //-------safari 滚动问题------
+    function handleIphoneScroll(scrollTOP){
+        console.log('scrollTOP',scrollTOP,mainH);
+        if(scrollTOP < mainH+footerH-winH ){
+            $("#footer_app").css({'overflow-y':"hidden"})
+        }else{
+            $("#footer_app").css({'overflow-y':"auto"})
+        }
+    }
+
     /*---中英文判断start---*/
     /* $.ajax({
         url:'http://ip.taobao.com/service/getIpInfo.php?ip=52.74.223.119'
@@ -76,6 +89,7 @@
 
     $('window,html,body').bind('scroll', function(e) {  //手机版
         handleScroll( $("nav").next().offset().top * -1 );
+        handleIphoneScroll($("nav").next().offset().top * -1)
     });
 
     $(window).bind('scroll', function(e){   //pc版
@@ -321,11 +335,5 @@
     }
 
     })
-    //-------safari 滚动问题------
-    /* $('window,html,body').scroll(function(){
-        if($("nav").next().offset().top < -200){
-            $("#footer_app").css({'overflow-y':"auto"})
-        }
-    }) */
-
+  
 })();
