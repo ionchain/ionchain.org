@@ -4,7 +4,7 @@
     var footerH = $('.main_footer').outerHeight();
     //-------safari 滚动问题------
     function handleIphoneScroll(scrollTOP){
-        console.log('scrollTOP',scrollTOP,mainH);
+        // console.log('scrollTOP',scrollTOP,mainH);
         if(scrollTOP < mainH+footerH-winH ){
             $("#footer_app").css({'overflow-y':"hidden"});
         }else{
@@ -12,6 +12,31 @@
         }
           
     }
+    function isTouchDevice(){
+        try{
+            document.createEvent("TouchEvent");
+            return true;
+        }catch(e){
+            return false;
+        }
+    }
+    function touchScroll(id){
+        if(isTouchDevice()){
+            var el=document.getElementById(id);
+            var scrollStartPos=0;
+
+            document.getElementById(id).addEventListener("touchstart", function(event) {
+                scrollStartPos=this.scrollTop+event.touches[0].pageY;
+                event.preventDefault();
+            },false);
+
+            document.getElementById(id).addEventListener("touchmove", function(event) {
+                this.scrollTop=scrollStartPos-event.touches[0].pageY;
+                event.preventDefault();
+            },false);
+        }
+    }
+    touchScroll("footer_app");
 
     /*---中英文判断start---*/
     /* $.ajax({
