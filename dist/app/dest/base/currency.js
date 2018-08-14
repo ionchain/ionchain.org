@@ -6,10 +6,11 @@
     function handleIphoneScroll(scrollTOP){
         console.log('scrollTOP',scrollTOP,mainH);
         if(scrollTOP < mainH+footerH-winH ){
-            $("#footer_app").css({'overflow-y':"hidden"})
+            $("#footer_app").css({'overflow-y':"hidden"});
         }else{
-            $("#footer_app").css({'overflow-y':"auto"})
+            $("#footer_app").css({'overflow-y':"auto"});
         }
+          
     }
 
     /*---中英文判断start---*/
