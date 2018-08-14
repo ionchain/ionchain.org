@@ -313,128 +313,182 @@ a:hover {
   width: 20%;
   height: 80px;
   margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.unit_img li:first-child {
-  background: url("http://img3.1nongfu.com/img/1.png") no-repeat center;
+.par_1_hover {
+  display: none;
 }
-.unit_img li:first-child:hover {
-  background: url("http://img3.1nongfu.com/img/1_hover.png") no-repeat center;
+.unit_img li:first-child:hover .par_1_hover {
+  display: block;
 }
-.unit_img li:nth-child(2) {
-  background: url("http://img3.1nongfu.com/img/2.png") no-repeat center;
+.unit_img li:first-child:hover .par_1 {
+  display: none;
 }
-.unit_img li:nth-child(2):hover {
-  background: url("http://img3.1nongfu.com/img/2_hover.png") no-repeat center;
+.par_2_hover {
+  display: none;
 }
-.unit_img li:nth-child(3) {
-  background: url("http://img3.1nongfu.com/img/3.png") no-repeat center;
+.unit_img li:nth-child(2):hover .par_2_hover {
+  display: block;
 }
-.unit_img li:nth-child(3):hover {
-  background: url("http://img3.1nongfu.com/img/3_hover.png") no-repeat center;
+.unit_img li:nth-child(2):hover .par_2 {
+  display: none;
 }
-.unit_img li:nth-child(4) {
-  background: url("http://img3.1nongfu.com/img/4.png") no-repeat center;
+.par_3_hover {
+  display: none;
 }
-.unit_img li:nth-child(4):hover {
-  background: url("http://img3.1nongfu.com/img/4_hover.png") no-repeat center;
+.unit_img li:nth-child(3):hover .par_3_hover {
+  display: block;
 }
-.unit_img li:nth-child(5) {
-  background: url("http://img3.1nongfu.com/img/5.png") no-repeat center;
+.unit_img li:nth-child(3):hover .par_3 {
+  display: none;
 }
-.unit_img li:nth-child(5):hover {
-  background: url("http://img3.1nongfu.com/img/5_hover.png") no-repeat center;
+.par_4_hover {
+  display: none;
 }
-.unit_img li:nth-child(6) {
-  background: url("http://img3.1nongfu.com/img/6.png") no-repeat center;
+.unit_img li:nth-child(4):hover .par_4_hover {
+  display: block;
 }
-.unit_img li:nth-child(6):hover {
-  background: url("http://img3.1nongfu.com/img/6_hover.png") no-repeat center;
+.unit_img li:nth-child(4):hover .par_4 {
+  display: none;
 }
-.unit_img li:nth-child(7) {
-  background: url("http://img3.1nongfu.com/img/7.png") no-repeat center;
+.par_5_hover {
+  display: none;
 }
-.unit_img li:nth-child(7):hover {
-  background: url("http://img3.1nongfu.com/img/7_hover.png") no-repeat center;
+.unit_img li:nth-child(5):hover .par_5_hover {
+  display: block;
 }
-.unit_img li:nth-child(8) {
-  background: url("http://img3.1nongfu.com/img/8.png") no-repeat center;
+.unit_img li:nth-child(5):hover .par_5 {
+  display: none;
 }
-.unit_img li:nth-child(8):hover {
-  background: url("http://img3.1nongfu.com/img/8_hover.png") no-repeat center;
+.par_6_hover {
+  display: none;
 }
-.unit_img li:nth-child(8) {
-  background: url("http://img3.1nongfu.com/img/8.png") no-repeat center;
+.unit_img li:nth-child(6):hover .par_6_hover {
+  display: block;
 }
-.unit_img li:nth-child(8):hover {
-  background: url("http://img3.1nongfu.com/img/8_hover.png") no-repeat center;
+.unit_img li:nth-child(6):hover .par_6 {
+  display: none;
 }
-.unit_img li:nth-child(9) {
-  background: url("http://img3.1nongfu.com/img/9.png") no-repeat center;
+.par_7_hover {
+  display: none;
 }
-.unit_img li:nth-child(9):hover {
-  background: url("http://img3.1nongfu.com/img/9_hover.png") no-repeat center;
+.unit_img li:nth-child(7):hover .par_7_hover {
+  display: block;
 }
-.unit_img li:nth-child(10) {
-  background: url("http://img3.1nongfu.com/img/10.png") no-repeat center;
+.unit_img li:nth-child(7):hover .par_7 {
+  display: none;
 }
-.unit_img li:nth-child(10):hover {
-  background: url("http://img3.1nongfu.com/img/10_hover.png") no-repeat center;
+.par_8_hover {
+  display: none;
 }
-.unit_img li:nth-child(11) {
-  background: url("http://img3.1nongfu.com/img/11.png") no-repeat center;
+.unit_img li:nth-child(8):hover .par_8_hover {
+  display: block;
 }
-.unit_img li:nth-child(11):hover {
-  background: url("http://img3.1nongfu.com/img/11_hover.png") no-repeat center;
+.unit_img li:nth-child(8):hover .par_8 {
+  display: none;
 }
-.unit_img li:nth-child(12) {
-  background: url("http://img3.1nongfu.com/img/12.png") no-repeat center;
+.par_9_hover {
+  display: none;
 }
-.unit_img li:nth-child(12):hover {
-  background: url("http://img3.1nongfu.com/img/12_hover.png") no-repeat center;
+.unit_img li:nth-child(9):hover .par_9_hover {
+  display: block;
+}
+.unit_img li:nth-child(9):hover .par_9 {
+  display: none;
+}
+.par_10_hover {
+  display: none;
+}
+.unit_img li:nth-child(10):hover .par_10_hover {
+  display: block;
+}
+.unit_img li:nth-child(10):hover .par_10 {
+  display: none;
+}
+.par_11_hover {
+  display: none;
+}
+.unit_img li:nth-child(11):hover .par_11_hover {
+  display: block;
+}
+.unit_img li:nth-child(11):hover .par_11 {
+  display: none;
+}
+.par_12_hover {
+  display: none;
+}
+.unit_img li:nth-child(12):hover .par_12_hover {
+  display: block;
+}
+.unit_img li:nth-child(12):hover .par_12 {
+  display: none;
 }
 /*技术支持*/
-.unit_img1 li:nth-child(1) {
-  background: url("http://img3.1nongfu.com/img/15.png") no-repeat center;
+.par_15_hover {
+  display: none;
 }
-.unit_img1 li:nth-child(1):hover {
-  background: url("http://img3.1nongfu.com/img/15_hover.png") no-repeat center;
+.unit_img1 li:nth-child(1):hover .par_15_hover {
+  display: block;
 }
-.unit_img1 li:nth-child(2) {
-  background: url("http://img3.1nongfu.com/img/16.png") no-repeat center;
+.unit_img1 li:nth-child(1):hover .par_15 {
+  display: none;
 }
-.unit_img1 li:nth-child(2):hover {
-  background: url("http://img3.1nongfu.com/img/16_hover.png") no-repeat center;
+.par_16_hover {
+  display: none;
 }
-.unit_img1 li:nth-child(3) {
-  background: url("http://img3.1nongfu.com/img/17.png") no-repeat center;
+.unit_img1 li:nth-child(2):hover .par_16_hover {
+  display: block;
 }
-.unit_img1 li:nth-child(3):hover {
-  background: url("http://img3.1nongfu.com/img/17_hover.png") no-repeat center;
+.unit_img1 li:nth-child(2):hover .par_16 {
+  display: none;
 }
-.unit_img1 li:nth-child(4) {
-  background: url("http://img3.1nongfu.com/img/18.png") no-repeat center;
+.par_17_hover {
+  display: none;
 }
-.unit_img1 li:nth-child(4):hover {
-  background: url("http://img3.1nongfu.com/img/18_hover.png") no-repeat center;
+.unit_img1 li:nth-child(3):hover .par_17_hover {
+  display: block;
 }
-.unit_img1 li:nth-child(5) {
-  background: url("http://img3.1nongfu.com/img/19.png") no-repeat center;
+.unit_img1 li:nth-child(3):hover .par_17 {
+  display: none;
 }
-.unit_img1 li:nth-child(5):hover {
-  background: url("http://img3.1nongfu.com/img/19_hover.png") no-repeat center;
+.par_18_hover {
+  display: none;
+}
+.unit_img1 li:nth-child(4):hover .par_18_hover {
+  display: block;
+}
+.unit_img1 li:nth-child(4):hover .par_18 {
+  display: none;
+}
+.par_19_hover {
+  display: none;
+}
+.unit_img1 li:nth-child(5):hover .par_19_hover {
+  display: block;
+}
+.unit_img1 li:nth-child(5):hover .par_19 {
+  display: none;
 }
 /*法律支持*/
-.unit_img2 li:first-child {
-  background: url("http://img3.1nongfu.com/img/20.png") no-repeat center;
+.par_20_hover {
+  display: none;
 }
-.unit_img2 li:first-child:hover {
-  background: url("http://img3.1nongfu.com/img/20_hover.png") no-repeat center;
+.unit_img2 li:first-child:hover .par_20_hover {
+  display: block;
 }
-.unit_img2 li:nth-child(2) {
-  background: url("http://img3.1nongfu.com/img/21.png") no-repeat center;
+.unit_img2 li:first-child:hover .par_20 {
+  display: none;
 }
-.unit_img2 li:nth-child(2):hover {
-  background: url("http://img3.1nongfu.com/img/21_hover.png") no-repeat center;
+.par_21_hover {
+  display: none;
+}
+.unit_img2 li:nth-child(2):hover .par_21_hover {
+  display: block;
+}
+.unit_img2 li:nth-child(2):hover .par_21 {
+  display: none;
 }
 .m_t_96 {
   margin-top: 96px;

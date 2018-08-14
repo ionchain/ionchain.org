@@ -29,7 +29,6 @@ gulp.task('less', function() {
 gulp.task('watch', function() {
 	gulp.watch(`${SRC}/less/**/*.less`, ['less']);
 	gulp.watch([`${SRC}/*.html`,`${SRC}/html-includes/**/*.html`], ['fileinclude']);
-	gulp.watch([`${SRC}/*.html`,`${SRC}/html-includes/**/*.html`], ['fileinclude']);
 });
 
 
