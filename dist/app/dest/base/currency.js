@@ -12,6 +12,7 @@
         }
           
     }
+    //解决safari的 overflow-y:auto
     function isTouchDevice(){
         try{
             document.createEvent("TouchEvent");
@@ -27,13 +28,13 @@
 
             document.getElementById(id).addEventListener("touchstart", function(event) {
                 scrollStartPos=this.scrollTop+event.touches[0].pageY;
-                event.preventDefault();
-            },false);
+                event.stopPropagation();
+            },true);
 
             document.getElementById(id).addEventListener("touchmove", function(event) {
                 this.scrollTop=scrollStartPos-event.touches[0].pageY;
                 event.preventDefault();
-            },false);
+            },true);
         }
     }
     touchScroll("footer_app");
@@ -349,7 +350,7 @@
     });
     // 移动端footer部分
     $(".footer_nav>li").click(function(){
-    console.log(".footer_nav>li");
+    // console.log(".footer_nav>li");
     if($(this).children(".drop_down").hasClass("drop_down_b")){
         $(this).children(".drop_down").removeClass("drop_down_b");
         $(this).children("div").css("border-bottom","1px solid #3D3F4A");
