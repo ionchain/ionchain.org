@@ -1,3 +1,45 @@
-.main{
-    width: 1200px;
+@import 'variable.less';
+.login_left,.login_right{
+    float: left;
+}
+.login_right{
+    width: 472px;
+    border-radius: 6px;
+    padding:50px; 
+    border: 1px  solid @inputBorderColor;
+}
+.login_right>.login_right_logo{
+    text-align: center;
+}
+.login_right>.login_right_logo>div:first-child{
+    height: 100px;
+}
+.login_right>.login_right_logo>div:first-child>img{
+    width: 100px;
+}
+.login_right>.login_right_logo>div:last-child{
+    color: @baseColor;
+    font-size: 26px;
+    margin: 16px 0 20px;
+}
+.login_right>.login_right_hint{
+    height: 30px;
+    border:1px solid #FFBAB8;
+    background:#FFE7E6; 
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #FF5F58;
+    display: flex;
+    align-items: center;
+}
+.login_right>.login_right_hint>span:first-child{
+    width: 20px;
+    height: 20px;
+    margin: 0 7px 0 12px;
+}
+.login_right>.login_right_name{
+    margin-bottom: 20px;
+}
+.login_right>.login_right_pw{
+    margin-bottom: 16px;
 }
