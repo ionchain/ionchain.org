@@ -82,6 +82,9 @@ a:hover {
   margin-left: 112px;
 }
 /*导航*/
+.nav > li > a {
+  padding: 10px 6px;
+}
 .colse_logo {
   display: none;
 }
