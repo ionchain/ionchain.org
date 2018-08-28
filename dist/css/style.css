@@ -1626,9 +1626,6 @@ a:hover {
   .right {
     display: block;
   }
-  .ion_bg_p {
-    padding-top: 6%;
-  }
 }
 #footer_app {
   display: none;
