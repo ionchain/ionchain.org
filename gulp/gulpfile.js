@@ -7,6 +7,8 @@
 var DIST = '../dist'
 var SRC = '../src'
 
+var CDNbaseurl = 'https://ionchain.oss-cn-shanghai.aliyuncs.com/'
+
 gulp.task('fileinclude', function() {
 	gulp.src([`${SRC}/*.html`])
 		.pipe(fileinclude({
@@ -14,15 +16,15 @@ gulp.task('fileinclude', function() {
 		// 	markdown: markdown.parse
 		// }
 		}))
-		.pipe(replace(/__baseURL#/g, 'http://img3.1nongfu.com/'))//relative '../'
+		.pipe(replace(/__baseURL#/g, CDNbaseurl))//relative '../'
 		.pipe(gulp.dest(DIST));
 });
 
 gulp.task('less', function() {
 	gulp.src(`${SRC}/less/*.less`)
 	.pipe(less())
-	.pipe(replace(/__baseIMG#/g, 'http://img3.1nongfu.com/'))
-	.pipe(replace(/__UPPER_ONE#/g, 'http://img3.1nongfu.com/'))
+	.pipe(replace(/__baseIMG#/g, CDNbaseurl))
+	.pipe(replace(/__UPPER_ONE#/g, CDNbaseurl))
 	.pipe(gulp.dest(`${DIST}/css`));
 });
 
