@@ -242,17 +242,17 @@
         i++
         //点击i加1
         if(i<length){
-            $("#myscrollbox_1").css("left",-(blw*i));
+            $("#myscrollbox_1 ul").css("left",-(blw*i));
             //子元素集合向左移动，距离为子元素的宽度乘以i。
         }else{
             // console.log("last move")
             i=length;
             if(lastW!=0){
 
-                $("#myscrollbox_1").css("left",-(blw*(length-1)+ lastW));
+                $("#myscrollbox_1 ul").css("left",-(blw*(length-1)+ lastW));
             }else{
 
-                $("#myscrollbox_1").css("left",-(blw*length));
+                $("#myscrollbox_1 ul").css("left",-(blw*length));
                 //超出可移动范围后点击不再移动。最后几个隐藏的元素显示时i数值固定位已经移走的子元素数量。
             }
         }
@@ -261,11 +261,11 @@
         i--
         //点击i减1
         if(i>=0){
-            $("#myscrollbox_1").css("left",-(blw*i));
+            $("#myscrollbox_1 ul").css("left",-(blw*i));
             //子元素集合向右移动，距离为子元素的宽度乘以i。
         }else{
             i=0;
-            $("#myscrollbox_1").css("left",0);
+            $("#myscrollbox_1 ul").css("left",0);
             //超出可移动范围后点击不再移动。最前几个子元素被显示时i为0。
         }
     });

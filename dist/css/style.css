@@ -864,12 +864,9 @@ a:hover {
     height:100%;
 } */
 .myscroll .myscrollbox {
-  display: block;
-  float: left;
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
   width: 1920px;
+  margin: auto;
 }
 .myscroll ul {
   display: block;
@@ -877,6 +874,15 @@ a:hover {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .myscroll ul li {
   display: block;
