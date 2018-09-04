@@ -108,6 +108,121 @@ input {
 s {
   text-decoration: none;
 }
+.wid-max {
+  width: 100%;
+}
+.of-hidden {
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.no-wrap {
+  white-space: no-wrap;
+}
+.flex1 {
+  flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+}
+.flex2 {
+  flex: 2;
+  box-flex: 2;
+  -webkit-flex: 2;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -ms-flex: 2;
+}
+.t-right {
+  text-align: right;
+}
+.w100 {
+  width: 100px;
+}
+.is-danger {
+  border-color: #f56c6c;
+}
+.lable-required:before {
+  content: "*";
+  color: #f56c6c;
+  margin-right: 4px;
+}
+.line-height-normal {
+  line-height: 32px;
+}
+.tb-noborder .el-date-editor.el-input {
+  width: 100%;
+}
+.tb-noborder td {
+  padding: 10px;
+}
+.tb-noborder .pr-0 {
+  padding-right: 0;
+}
+.t-left {
+  text-align: left;
+}
+.t-top {
+  vertical-align: top;
+}
+.pr-0 {
+  padding-right: 0;
+}
+.v-template {
+  display: none;
+}
+.common-input {
+  width: auto;
+}
+.hover-hand {
+  cursor: pointer;
+}
+.bold {
+  font-weight: bold;
+}
+.font-sm {
+  font-size: 12px;
+}
+.font-nm {
+  font-size: 13px;
+}
+.font-bg {
+  font-size: 15px;
+}
+.font-lg {
+  font-size: 18px;
+}
+.global-space {
+  /*---font color start---*/
+  /*---font color end---*/
+}
+.of-dot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dis-block {
+  display: block;
+}
+.pic-center-ctn {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.pic-center-ctn img {
+  width: 100%;
+}
 /* .team-list{
     width: 1125rem/@ratio;
 } */
@@ -118,7 +233,7 @@ body {
 .team_app {
   display: none;
 }
-.header {
+.header.minified {
   box-shadow: 0px 1px 0px 0px #f1f1f1;
   background: #fff;
 }
@@ -131,8 +246,28 @@ body {
 .header .navbar-nav > li > a:focus {
   color: #343434 !important;
 }
+.vis-pc {
+  display: block;
+}
+.vis-mobile {
+  display: none;
+}
 /*媒体查询*/
+@media (min-width: 769px) {
+  .vis-pc {
+    display: block;
+  }
+  .vis-mobile {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
+  .vis-mobile {
+    display: block;
+  }
+  .vis-pc {
+    display: none;
+  }
   .header .navbar-nav > li > a:hover {
     color: #fff !important;
   }
@@ -231,10 +366,6 @@ body {
   }
   .gallery-wrapper .swiper-slide-active:before {
     opacity: 0;
-  }
-  .section-team {
-    margin-top: 7.35714286rem;
-    padding-top: 0;
   }
   .section-consultant {
     background: #f9fbfd;

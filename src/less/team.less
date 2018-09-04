@@ -1,6 +1,7 @@
 @import 'imports/variable.less';
 @import 'imports/mixins.less';
 @import 'imports/reset.less';
+@import 'imports/global.less';
 /* .team-list{
     width: 1125rem/@ratio;
 } */
@@ -13,8 +14,10 @@ body{
 }
 // 导航start
 .header{
-    box-shadow:0px 1px 0px 0px rgba(241,241,241,1);
-    background: #fff;
+    &.minified{
+        box-shadow:0px 1px 0px 0px rgba(241,241,241,1);
+        background: #fff;
+    }
 }
 .header .navbar-nav>li>a{
     color: #343434;
@@ -26,9 +29,28 @@ body{
     color:#343434 !important;
 }
 // 导航end
-
+.vis-pc{
+    display: block;
+}
+.vis-mobile{
+    display: none;
+}
 /*媒体查询*/
+@media (min-width: 769px) {
+    .vis-pc{
+        display: block;
+    }
+    .vis-mobile{
+        display: none;
+    }
+}
 @media (max-width: 768px) { 
+    .vis-mobile{
+        display: block;
+    }
+    .vis-pc{
+        display: none;
+    }
     .header .navbar-nav>li>a:hover{
         color: #fff !important;
     }
@@ -132,8 +154,6 @@ body{
         }
     }
     .section-team{
-        margin-top: 103rem/@ratio;
-        padding-top: 0;
     }
     .section-consultant{
         background:rgba(249,251,253,1);
