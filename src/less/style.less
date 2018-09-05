@@ -941,15 +941,23 @@ a:hover{
     height:100%;
 } */
 .myscroll .myscrollbox{
-    display:block;
-    float:left;
+    position: relative;
+    width:1920px;
+    margin: auto;
+}
+
+.myscroll ul{
+    display:block; float:left; list-style-type:none; padding:0; margin:0;
     position:absolute;
     left:0;
     top:0;
-    width:1920px;
+    width:100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
-
-.myscroll ul{display:block; float:left; list-style-type:none; padding:0; margin:0;}
 .myscroll ul li{display:block; float:left; padding:0; margin:0;width:320px; position:relative;
     height:200px;
     color:#333;}
