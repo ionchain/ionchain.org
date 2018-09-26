@@ -648,6 +648,10 @@ a:hover {
 }
 .community_cont {
   display: flex;
+  zoom: 1;
+}
+.community_cont > div {
+  flex: 1;
 }
 .courses .community_courses_img {
   margin-right: 20px;
@@ -697,6 +701,9 @@ a:hover {
   color: #08AEB2;
   font-size: 14px;
   justify-content: space-between;
+}
+.community_text_sz {
+  margin-top: 50px !important;
 }
 .p_l_r {
   padding: 0;
