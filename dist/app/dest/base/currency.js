@@ -167,7 +167,7 @@
         }
     }
 
-    $(".z_en a").click(function(e){
+    $(".z_en a[data-language]").click(function(e){
         // if(location.pathname=="/vision_EN.html"){
         //     $(location).attr("href","vision_CN.html");
         // }
