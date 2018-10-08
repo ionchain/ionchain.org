@@ -195,8 +195,6 @@ a:hover {
   font-size: 18px;
   color: #fff;
   font-weight: 300;
-  display: block;
-  height: 100%;
 }
 .ico_progress_in div:last-child {
   background: url("../../img/white_bg.svg") no-repeat;
