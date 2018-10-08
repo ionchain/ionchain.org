@@ -143,45 +143,36 @@
         // $(".colse_logo").css("display","block");
     })
     // 导航中英文切换
-    $(".z_en").click(function(){
+    var languageMap = {
+        EN: {
+            index: '/',
+            coming_soon: '/coming_soon_EN.html',
+            vision: '/vision_EN.html',
+            team: '/team_EN.html',
+            community: 'community_EN.html'
+        },
+        CN: {
+            index: 'index_CN.html',
+            coming_soon: '/coming_soon.html',
+            vision: '/vision_CN.html',
+            team: '/team_CN.html',
+            community: 'community_CN.html'
+        },
+        KO: {
+            index: 'index_KO.html',
+            coming_soon: '/coming_soon_KO.html',
+            vision: '/vision_KO.html',
+            team: '/team_KO.html',
+            community: 'community_KO.html'
+        }
+    }
+
+    $(".z_en a").click(function(e){
         // if(location.pathname=="/vision_EN.html"){
         //     $(location).attr("href","vision_CN.html");
         // }
-        switch(location.pathname){
-            case "/": 
-                $(location).attr("href","index_CN.html");
-            break;
-            case "/index.html": 
-                $(location).attr("href","index_CN.html");
-            break;
-            case "/index_CN.html":
-                $(location).attr("href","/");
-            break;
-            case "/coming_soon_EN.html":
-                $(location).attr("href","/coming_soon.html");
-            break;
-            case "/coming_soon.html":
-                $(location).attr("href","/coming_soon_EN.html");
-            break;
-            case "/vision_CN.html":
-                $(location).attr("href","/vision_EN.html");
-            break;
-            case "/vision_EN.html":
-                $(location).attr("href","/vision_CN.html");
-            break;
-            case "/team_CN.html":
-                $(location).attr("href","/team_EN.html");
-            break;
-            case "/team_EN.html":
-                $(location).attr("href","/team_CN.html");
-            break;
-            case "/community_CN.html":
-                $(location).attr("href","/community_EN.html");
-            break;
-            case "/community_EN.html":
-                $(location).attr("href","/community_CN.html");
-            break;
-        }
+        var url = languageMap[e.target.dataset.language][pageName]
+        location.href = url
     })
 
     // 首页 离子链视频
