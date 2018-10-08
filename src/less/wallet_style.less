@@ -46,7 +46,29 @@ html{
     -o-transition: transform .5s ease-out;
     transition: transform .5s ease-out;
 }
-
+// 导航start
+	.open{
+		position: relative;
+	}
+	.open>.dropdown-menu{
+		position: absolute;
+		right: 0;
+		li{
+			display: block !important;
+			line-height: 0 !important;
+			padding: 5px;
+			a{
+				display: block !important;
+				color: #2D2F37 !important;
+				padding:0 !important;;
+			}
+			a:hover{
+				color: #08AEB2 !important;
+			}
+		}
+		
+	}
+// 导航end
 .ioc_while{
 	color: #fff;
 }
