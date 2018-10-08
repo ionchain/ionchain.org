@@ -40,6 +40,26 @@ html {
   -o-transition: transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
 }
+.open {
+  position: relative;
+}
+.open > .dropdown-menu {
+  position: absolute;
+  right: 0;
+}
+.open > .dropdown-menu li {
+  display: block !important;
+  line-height: 0 !important;
+  padding: 5px;
+}
+.open > .dropdown-menu li a {
+  display: block !important;
+  color: #2D2F37 !important;
+  padding: 0 !important;
+}
+.open > .dropdown-menu li a:hover {
+  color: #08AEB2 !important;
+}
 .ioc_while {
   color: #fff;
 }
