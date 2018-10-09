@@ -47,32 +47,13 @@
     // 导航栏切换
     //-----------  导航控制
     // console.log(location.pathname)
-    function findMenu(path){
-        var $item = $("#header-navbar-collapse .navbar_collapse_main");
-        var menuList = [];
-        for(var i in path){
-            $item = $item.children('ul').children("li").eq(path[i])
-            menuList.push($item)
-        }
-        return menuList
-    }
-    function searchMenu(pathname,urlMap){
-        var path = null;
-        for(var prop in urlMap){
-            // console.log(prop,"dddddddd")
-            if(pathname.indexOf(prop) > -1){
-                path = urlMap[prop];
-                break;
-            }
-        }
-        return path
-    }
-    var menuPath = searchMenu(location.pathname, urlMap)
-    var matchMenuList =  findMenu(menuPath)
-    // console.log("matchMenuList",matchMenuList)
 
-    for(var k in matchMenuList){
-        matchMenuList[k].addClass('active_ac')
+    // $("#header-navbar-collapse [page="+pageName+"]").addClass('active_ac')
+    var pages = $("#header-navbar-collapse [page="+pageName+"]");
+    if(pages.parent(".navbar-nav").length == 1){
+        pages.addClass('active_ac');
+    }else if(pages.parent(".navbar-nav").length == 0){
+        pages.parent(".dropdown-menu").parent('li').addClass('active_ac');
     }
 
     var new_scroll_position = 0;
