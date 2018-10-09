@@ -1473,15 +1473,16 @@ a:hover {
   }
   .community_text_s {
     font-size: 12px;
+    margin-top: 10px !important;
+  }
+  .community_text_s > span:first-child {
+    padding-right: 10px;
   }
   .m_r_30 {
     margin-right: 0;
   }
   .courses .community_courses_img {
     margin-right: 10px;
-  }
-  .community_text_s {
-    margin-top: 10px;
   }
   .community_img > span {
     width: 27px;
