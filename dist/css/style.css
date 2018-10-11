@@ -164,8 +164,11 @@ a:hover {
   font-size: 64px;
 }
 .ico_progress_in_sub_desc1 > div:nth-child(2) {
-  font-size: 80px;
+  font-size: 56px;
   font-weight: 550;
+}
+.ico_progress_in_sub_desc1 > div:nth-child(3) {
+  font-size: 36px;
 }
 .ico_progress_in {
   margin-top: 44px;
