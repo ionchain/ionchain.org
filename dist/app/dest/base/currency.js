@@ -47,8 +47,7 @@
     // 导航栏切换
     //-----------  导航控制
     // console.log(location.pathname)
-
-    // $("#header-navbar-collapse [page="+pageName+"]").addClass('active_ac')
+    // 导航切换效果
     var pages = $("#header-navbar-collapse [page="+pageName+"]");
     if(pages.parent(".navbar-nav").length == 1){
         pages.addClass('active_ac');
