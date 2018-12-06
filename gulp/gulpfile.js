@@ -40,6 +40,7 @@ gulp.task('browser-sync', function() {
 			baseDir: "../dist"
 		},
 		// proxy:"http://localhost:3000",
+		// host:"192.168.23.112",
 		port:8800,
 		ui: {
 			port: 8801
