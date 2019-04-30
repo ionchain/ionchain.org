@@ -703,7 +703,8 @@
         videojs.options.flash.swf = "video-js.swf";
 
 
-        var $iframeVideo = $('<iframe src="" frameborder="0" allowfullscreen="true" width="100%" height="100%" id="video-i4"></iframe>');
+        // var $iframeVideo = $('<iframe src="" frameborder="0" allowfullscreen="true" width="100%" height="100%" id="video-i4"></iframe>');
+        var $iframeVideo = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bjT5439HSGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         $(window).load(function () {
             localStorage.setItem('isFirstVisit','yes');
             var video = '<video id="my_player" class="video-js vjs-big-play-centered vjs-fluid" poster="https://ionchain.oss-cn-shanghai.aliyuncs.com/img/15196.jpg" autoplay playsinline data-setup="{}" muted loop>\n' +
@@ -717,7 +718,7 @@
                 $(".layout_p").css({height:"auto"});
             });
         });
-        $iframeVideo[0].src ='https://www.youtube.com/embed/7d-akeKciwM';
+        // $iframeVideo[0].src ='https://youtu.be/bjT5439HSGE';
     </script>
 
     <script>
