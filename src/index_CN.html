@@ -331,8 +331,7 @@
         videojs.options.flash.swf = "video-js.swf";
 
 
-        // var $iframeVideo = $('<iframe src="https://youtu.be/bjT5439HSGE" frameborder="0" allowfullscreen="true" width="100%" height="100%" id="video-i4"></iframe>');
-        var $iframeVideo = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bjT5439HSGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        var $iframeVideo = $('<iframe src="" frameborder="0" allowfullscreen="true" width="100%" height="100%" id="video-i4"></iframe>');
 
         $(window).load(function () {
             localStorage.setItem('isFirstVisit','yes');
@@ -347,7 +346,7 @@
                  $(".layout_p").css({height:"auto"});
             });
         });
-        // $iframeVideo[0].src ='https://player.bilibili.com/player.html?aid=27841682&cid=48071162&page=1';
+        $iframeVideo[0].src ='https://player.bilibili.com/player.html?aid=27841682&cid=48071162&page=1';
         // $iframeVideo[0].src ='https://www.youtube.com/embed/bjT5439HSGE';
 
 
