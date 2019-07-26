@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/bitbug_favicon.ico">
+    <title>IONCToken使用手册</title>
+    <meta content="" name="author">
+    <link rel="stylesheet" href="/css/markdownit.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/9.0.1/markdown-it.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body class="">
+    <div id="markdownit-box" class="markdownit-box"></div>
+</body>
+    <script>
+        $(function(){
+            var md = markdownit({
+                html: true
+            })
+            $.ajax({
+                url:'/help/help.md',
+                type:'get',
+                dataType:'text',
+                success:function(data){
+                    var html = md.render(data)
+                    $('#markdownit-box').html(html)
+                }
+            })
+        })
+    </script>
+</html>

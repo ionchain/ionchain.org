@@ -1,0 +1,15 @@
+.markdownit-box pre {
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+.markdownit-box img {
+  width: 100%;
+}
+.markdownit-box em {
+  font-style: normal;
+  font-weight: bold;
+  color: #0070c0;
+}
+.markdownit-box strong {
+  color: #e63c3c;
+}
